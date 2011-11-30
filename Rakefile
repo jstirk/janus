@@ -160,6 +160,10 @@ vim_plugin_task "camelcasemotion",  "http://www.vim.org/scripts/download_script.
 vim_plugin_task "file-line",        "https://github.com/bogado/file-line.git"
 vim_plugin_task "asynccommand",     "https://github.com/vim-scripts/AsyncCommand.git"
 
+vim_plugin_task "scratch.vim" do
+  sh "curl http://www.vim.org/scripts/download_script.php?src_id=2050 > plugin/scratch.vim"
+end
+
 #vim_plugin_task "hammer",           "git://github.com/robgleeson/hammer.vim.git" do
 #  sh "gem install github-markup redcarpet"
 #end
